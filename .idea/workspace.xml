@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fcb49ed-2c7e-482b-ae22-4e3cd7363ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seminar1-Generics-Collections.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/files/ex.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/files/slang.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/ic_dice.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/ic_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/AddSangWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/SlangDictionary/MapController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar1-Generics-Collections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar1-Generics-Collections.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +96,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.Interface">
     <configuration name="Interface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -121,13 +122,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,6 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617772043265</updated>
       <workItem from="1617772044815" duration="458000" />
+      <workItem from="1617809524531" duration="4297000" />
     </task>
     <servers />
   </component>
@@ -167,6 +171,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
