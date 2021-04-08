@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b6a1a7-df5c-446b-bb28-142acc1af2ca" name="Default Changelist" comment="Initial interface">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/ic_main.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/ic_main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/AddSlangWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/InterfaceWordPanel/AddSangWord.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/SlangDictionary/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/SlangDictionary/Interface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/AddSangWord.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +44,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -50,11 +56,19 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.SlangDictionary" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Interface">
     <configuration name="Interface" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.SlangDictionary.Interface" />
-      <module name="SlangDictionary-master" />
+      <module name="Seminar1-Generics-Collections" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.SlangDictionary.*" />
@@ -117,7 +131,9 @@
       <workItem from="1617856207048" duration="874000" />
       <workItem from="1617857100649" duration="594000" />
       <workItem from="1617857721546" duration="324000" />
-      <workItem from="1617858098000" duration="93000" />
+      <workItem from="1617858098000" duration="203000" />
+      <workItem from="1617858316034" duration="1333000" />
+      <workItem from="1617861969279" duration="5398000" />
     </task>
     <servers />
   </component>
@@ -125,9 +141,19 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial interface" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial interface" />
   </component>

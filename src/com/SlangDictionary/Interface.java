@@ -1,4 +1,9 @@
 package com.SlangDictionary;
+/**
+ * @author Pham Nguyen My Diem
+ * @date 4/8/21
+ * @version 1.0
+ */
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,8 +15,8 @@ import com.InterfaceWordPanel.*;
 
 public class Interface {
     private static int selected = 0;
-    private static final Color primaryColor = Color.decode("#ff7675");
-    private static final Color secondaryColor = Color.decode("#192a56");
+    private static final Color primaryColor = Color.decode("#192a56");
+    private static final Color secondaryColor = Color.decode("#ff7675");
     private static final String[] buttonLabels = {
             "Search by Slang Word",
             "Search by Definition",
@@ -23,12 +28,97 @@ public class Interface {
     };
     private static MapController map = null;
 
+    public static void addComponentsToPane(Container pane) {
+        pane.setLayout(new BorderLayout());
+        pane.setSize(new Dimension(500, 600));
+
+        //Panel 1:
+        JPanel sidebar = new JPanel();
+        sidebar.setLayout(new GridLayout(0, 1));
+
+        //Panel 2:
+        JPanel mainPanel = new JPanel(new CardLayout());
+
+        for (int i = 0; i < buttonLabels.length; i++) {
+            String buttonLabel = buttonLabels[i];
+            final int index = i;
+            JButton newBtn = new JButton(buttonLabel);
+            newBtn.setMargin(new Insets(15, 15, 15, 15));
+            newBtn.setMaximumSize(new Dimension(100, 50));
+            if (buttonLabel.equals(buttonLabels[selected])) {
+                newBtn.setBackground(secondaryColor);
+                newBtn.setForeground(Color.white);
+            } else {
+                newBtn.setBackground(primaryColor);
+                newBtn.setForeground(Color.white);
+            }
+
+            newBtn.addActionListener(event -> {
+                sidebar.getComponent(selected).setBackground(primaryColor);
+                ((Component) event.getSource()).setBackground(secondaryColor);
+                selected = index;
+                CardLayout cl = (CardLayout) (mainPanel.getLayout());
+                cl.show(mainPanel, buttonLabel);
+            });
+            sidebar.add(newBtn);
+        }
+
+        JButton resetBtn = new JButton("Reset Dictionary");
+        resetBtn.setBackground(Color.decode("#FF4500"));
+        resetBtn.setForeground(Color.white);
+        resetBtn.setMargin(new Insets(15, 15, 15, 15));
+        resetBtn.setMaximumSize(new Dimension(100, 50));
+        resetBtn.addActionListener(actionEvent -> {
+            JFrame frame = (JFrame) SwingUtilities.getRoot((Component) actionEvent.getSource());
+            addResetFunction(frame);
+        });
+        sidebar.add(resetBtn);
+
+        addSearchBySlangWord(mainPanel);
+        addSearchByDefWord(mainPanel);
+        addHistoryWord(mainPanel);
+        addAddingNewSlangWord(mainPanel);
+        addEditNewSlangWord(mainPanel);
+        addSlangQuizWord(mainPanel);
+        addSlangQuiz2Word(mainPanel);
+
+        pane.add(sidebar, BorderLayout.LINE_START);
+        pane.add(mainPanel, BorderLayout.CENTER);
+    }
+
+    private static void addSlangQuiz2Word(JPanel mainPanel) {
+    }
+
+    private static void addSlangQuizWord(JPanel mainPanel) {
+    }
+
+    private static void addEditNewSlangWord(JPanel mainPanel) {
+    }
+
+    private static void addAddingNewSlangWord(Container pane) {
+        AddSlangWord word = new AddSlangWord();
+        word.addActionEvent(map);
+        pane.add(word, buttonLabels[3]);
+
+    }
+
+    private static void addHistoryWord(JPanel mainPanel) {
+    }
+
+    private static void addSearchByDefWord(JPanel mainPanel) {
+    }
+
+    private static void addSearchBySlangWord(JPanel mainPanel) {
+    }
+
+    private static void addResetFunction(JFrame frame) {
+    }
 
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("Slang Dictionary");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        //addComponentsToPane(frame.getContentPane());
+        addComponentsToPane(frame.getContentPane());
 
         frame.setPreferredSize(new Dimension(900, 400));
         frame.setResizable(false);
@@ -38,7 +128,7 @@ public class Interface {
 
     public static void main(String[] args) {
         UIManager.put("Label.font", new Font("Helvetica Neue", Font.PLAIN, 20));
-        UIManager.put("Button.font", new Font("SF Mono", Font.BOLD, 18));
+        UIManager.put("Button.font", new Font("SF Mono", Font.BOLD, 16));
         javax.swing.SwingUtilities.invokeLater(() -> {
             map = new MapController();
             createAndShowGUI();
