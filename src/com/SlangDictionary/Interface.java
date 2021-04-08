@@ -120,10 +120,14 @@ public class Interface {
 
         addComponentsToPane(frame.getContentPane());
 
+        frame.getContentPane().setBackground(Color.BLACK);
+
         frame.setPreferredSize(new Dimension(900, 400));
         frame.setResizable(false);
+        //frame.getContentPane().setBackground(Color.BLUE);
         frame.pack();
         frame.setVisible(true);
+        frame.getContentPane().setBackground(Color.BLACK);
     }
 
     public static void main(String[] args) {
