@@ -1,8 +1,9 @@
 package com.SlangDictionary;
+
 /**
  * @author Pham Nguyen My Diem
- * @date 4/8/21
  * @version 1.0
+ * @date 4/8/2021
  */
 
 import javax.swing.*;
@@ -120,7 +121,7 @@ public class Interface {
 
         addComponentsToPane(frame.getContentPane());
 
-        frame.getContentPane().setBackground(Color.BLACK);
+        frame.setBackground(Color.BLACK);
 
         frame.setPreferredSize(new Dimension(900, 400));
         frame.setResizable(false);
@@ -131,8 +132,8 @@ public class Interface {
     }
 
     public static void main(String[] args) {
-        UIManager.put("Label.font", new Font("Helvetica Neue", Font.PLAIN, 20));
-        UIManager.put("Button.font", new Font("SF Mono", Font.BOLD, 16));
+        UIManager.put("Label.font", new Font("Arial", Font.PLAIN, 20));
+        UIManager.put("Button.font", new Font("Arial", Font.BOLD, 16));
         javax.swing.SwingUtilities.invokeLater(() -> {
             map = new MapController();
             createAndShowGUI();
