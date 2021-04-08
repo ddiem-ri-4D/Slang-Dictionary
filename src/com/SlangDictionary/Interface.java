@@ -11,7 +11,7 @@ import com.InterfaceWordPanel.*;
 public class Interface {
     private static int selected = 0;
     private static final Color primaryColor = Color.decode("#ff7675");
-    private static final Color secondaryColor = Color.decode("192a56");
+    private static final Color secondaryColor = Color.decode("#192a56");
     private static final String[] buttonLabels = {
             "Search by Slang Word",
             "Search by Definition",
@@ -44,6 +44,4 @@ public class Interface {
             createAndShowGUI();
         });
     }
-
-
 }
