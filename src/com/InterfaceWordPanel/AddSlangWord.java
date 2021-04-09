@@ -22,21 +22,29 @@ public class AddSlangWord extends JPanel {
         JPanel slangPanel = new JPanel();
         slangPanel.setBorder(BorderFactory.createEmptyBorder(23, 0, 23, 0));
         newSlangInput = new JTextField(16);
+        newSlangInput.setFont(new Font("Arial", Font.BOLD, 16));
+        newSlangInput.setForeground(Color.decode("#192a56"));
         newSlangInput.setFont(new Font("SF Mono", Font.PLAIN, 16));
         JLabel inputLabel = new JLabel("Slang word ");
+        inputLabel.setFont(new Font("Arial", Font.BOLD, 16));
+        inputLabel.setForeground(Color.decode("#192a56"));
         //inputLabel.setFont(new Font("Arial", Font.PLAIN, 16));
-        newSlangInput.setBorder(BorderFactory.createLineBorder(Color.decode("#ff7675")));
+        newSlangInput.setBorder(BorderFactory.createLineBorder(Color.decode("#192a56")));
         slangPanel.add(inputLabel);
         slangPanel.add(newSlangInput);
 
         JPanel descPanel = new JPanel();
         descInput = new JTextArea(3, 23);
+        descInput.setFont(new Font("Arial", Font.BOLD, 16));
+        descInput.setForeground(Color.decode("#192a56"));
         descInput.setLineWrap(true);
         descInput.setWrapStyleWord(true);
         descInput.setFont(new Font("SF Mono", Font.PLAIN, 16));
         JLabel descLabel = new JLabel("Definition  ");
+        descLabel.setFont(new Font("Arial", Font.BOLD, 16));
+        descLabel.setForeground(Color.decode("#192a56"));
         //descLabel.setFont(new Font("Arial", Font.PLAIN, 16));
-        descInput.setBorder(BorderFactory.createLineBorder(Color.decode("#ff7675")));
+        descInput.setBorder(BorderFactory.createLineBorder(Color.decode("#192a56")));
         descPanel.add(descLabel);
         descPanel.add(descInput);
 
@@ -64,8 +72,9 @@ public class AddSlangWord extends JPanel {
             if (slang.equals("") || mean.equals("")) {
                 JOptionPane.showMessageDialog(frame,
                         "Input is not supposed to be empty!",
-                        "Empty error",
+                        "Empty Error",
                         JOptionPane.ERROR_MESSAGE);
+
             } else {
                 final String[] options = {
                         "Overwrite", "Add duplicate", "Cancel"
@@ -74,7 +83,7 @@ public class AddSlangWord extends JPanel {
 
                 if (res) {
                     int c = JOptionPane.showOptionDialog(null,
-                            "This slang word exists!\nChoose your option", "Existing word",
+                            "This slang word exists!\nChoose your option?", "Existing Word",
                             JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
                             null, options, options[0]);
                     if (c == 0) {
@@ -98,6 +107,9 @@ public class AddSlangWord extends JPanel {
                         "Status",
                         JOptionPane.ERROR_MESSAGE);
             }
+            //submitBtn.setFont(new Font("Arial", Font.BOLD, 16));
+            //submitBtn.setForeground(Color.decode("#192a56"));
+
         });
     }
 }

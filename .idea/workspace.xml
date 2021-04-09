@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b6a1a7-df5c-446b-bb28-142acc1af2ca" name="Default Changelist" comment="Initial interface">
-      <change afterPath="$PROJECT_DIR$/ex.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/SearchWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/InterfaceWordPanel/AddSlangWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/InterfaceWordPanel/AddSlangWord.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/SlangDictionary/Interface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/SlangDictionary/Interface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/SlangDictionary/MapController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/SlangDictionary/MapController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/AddSlangWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/AddSlangWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/SearchWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/SearchWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/MapController.java" afterDir="false" />
     </list>
@@ -89,15 +87,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,7 +142,8 @@
       <workItem from="1617858098000" duration="203000" />
       <workItem from="1617858316034" duration="1333000" />
       <workItem from="1617861969279" duration="8046000" />
-      <workItem from="1617892235888" duration="6124000" />
+      <workItem from="1617892235888" duration="6247000" />
+      <workItem from="1617943696924" duration="9699000" />
     </task>
     <servers />
   </component>

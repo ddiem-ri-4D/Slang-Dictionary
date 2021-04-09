@@ -84,8 +84,25 @@ public class MapController {
             System.out.print("EXCEPTION CATCH: ");
             System.out.println(error.getMessage());
         }
-        
+
     }
+
+    MapController() {
+        history = new ArrayList<>();
+        if (!(new File("./ex.txt")).exists()) {
+            try {
+                createExFile();
+                System.out.println("Create ex file successfully!");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("USING EXISTING EX FILE!");
+            readDictionary();
+            System.out.println(map.size() + " USING EX FILE: " + ASSETS_FILES_EX_TXT);
+        }
+    }
+
 
     private void removeFromDefList(String key, String s) {
     }
@@ -93,24 +110,7 @@ public class MapController {
     private void addToDefList(String key, String value) {
     }
 
-    MapController() {
-        history = new ArrayList<>();
-        if(!(new File("./ex.txt")).exists()){
-            try{
-                createExFile();
-                System.out.println("Create ex file successfully!");
-            }catch(IOException e){
-                e.printStackTrace();
-            }
-        }
-        else{
-            System.out.println("USING EXISTING EX FILE!");
-            readDictionary();
-            System.out.println(map.size() + " USING EX FILE: " + ASSETS_FILES_EX_TXT);
-        }
-    }
-
-    private void createExFile() throws IOException{
+    private void createExFile() throws IOException {
         FileOutputStream oos = new FileOutputStream("./ex.txt");
         oos.write(FILE_HEADER.getBytes(), 0, FILE_HEADER.length());
         oos.close();
@@ -124,13 +124,12 @@ public class MapController {
         String data = "\n" + slang + '`' + mean;
         String key = slang.toLowerCase();
 
-        if(map.containsKey(key)){
+        if (map.containsKey(key)) {
             map.replace(key, mean);
             keys.add(key);
             removeFromDefList(slang, mean);
             addToDefList(slang, mean);
-        }
-        else{
+        } else {
             addToDefList(slang, mean);
             map.put(key, mean);
         }
@@ -139,11 +138,11 @@ public class MapController {
     }
 
     private boolean fileWriteHelper(String data) {
-        try{
+        try {
             FileOutputStream fos = new FileOutputStream(ASSETS_FILES_EX_TXT, true);
             fos.write(data.getBytes(), 0, data.length());
             fos.close();
-        }catch(IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
             return false;
         }
@@ -152,14 +151,51 @@ public class MapController {
 
     public String getDefinition(String slang) {
         String key = slang.toLowerCase();
-        if(map.containsKey(key)){
+        return hasKey(key) ? map.get(key) : "";
+    }
+
+    public String getDefinitionWithRecord(String slang) {
+        String key = slang.toLowerCase();
+        if (map.containsKey(key)) {
             String description = map.get(key);
             history.add(slang + " - " + description);
             return description;
         }
-        history.add(slang + " " + "Not found!");
+        history.add(slang + " - " + "Not Found!");
         return "";
     }
 
+    public String[] getRandomKeys(int n) {
+        ArrayList<String> arr = new ArrayList<>();
 
+        for (int i = 0; i < n; i++) {
+            String randomKey = keys.get(new Random().nextInt(keys.size()));
+            if (!arr.contains(randomKey))
+                arr.add(randomKey);
+            else i--;
+        }
+
+        return arr.toArray(new String[n]);
+    }
+
+    public String[] getSlangWordsByDef(String keyword) {
+        String[] keys = keyword.toLowerCase().split("");
+        Set<String> retainSet = null;
+        for (String key : keys){
+            if(!defList.containsKey(key)){
+                history.add(keyword + " - Not Found!");
+                return null;
+            }
+
+            Set<String> slang = new HashSet<>((defList.get(key)));
+            if (retainSet != null)
+                retainSet.retainAll(slang);
+            else retainSet = slang;
+        }
+
+        String[] res = new String[retainSet.size()];
+        retainSet.toArray(res);
+        history.add(keyword + " - " + String.join(", ", res));
+        return res;
+    }
 }

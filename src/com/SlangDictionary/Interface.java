@@ -100,16 +100,47 @@ public class Interface {
         AddSlangWord word = new AddSlangWord();
         word.addActionEvent(map);
         pane.add(word, buttonLabels[3]);
-
     }
 
     private static void addHistoryWord(JPanel mainPanel) {
     }
 
-    private static void addSearchByDefWord(JPanel mainPanel) {
+    private static void addSearchByDefWord(Container pane) {
+        SearchWord word = new SearchWord(false);
+        Function<String, String> getDefFn = (s) -> {
+            String[] keys = map.getSlangWordsByDef(s);
+            if (keys == null) return "";
+            StringBuilder result = new StringBuilder();
+            for (String key : keys) {
+                String temp = String.format("+ <b>%s</b> - %s <br/>", key, map.getDefinition(key));
+                result.append(temp);
+            }
+            return "<html>" + result + "</html>";
+        };
+
+        word.setMapController(getDefFn, null);
+        pane.add(word, buttonLabels[1]);
     }
 
-    private static void addSearchBySlangWord(JPanel mainPanel) {
+    private static void addSearchBySlangWord(Container pane) {
+        SearchWord word = new SearchWord(true);
+        Function<String, String> getDefFn = (s) -> {
+            String def = map.getDefinitionWithRecord(s);
+            if (def.equals(""))
+                return "";
+            String res = String.join("<br/>+", def.split("\\|"));
+            return "<html>+" + res + "</html>";
+        };
+        Callable<String[]> getRandomValuesFn = () -> {
+            String[] res = new String[2];
+            res[0] = map.getRandomKeys(1)[0];
+            res[1] = map.getDefinition(res[0]);
+            return res;
+        };
+
+        word.setMapController(getDefFn, getRandomValuesFn);
+        pane.add(word, buttonLabels[0]);
+
     }
 
     private static void addResetFunction(JFrame frame) {
