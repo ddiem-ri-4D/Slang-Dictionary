@@ -217,4 +217,13 @@ public class MapController {
         String[] arr = new String[history.size()];
         return history.toArray(arr);
     }
+
+    public boolean removeAWord(String slang) {
+        slang  = slang.toLowerCase();
+        if(!map.containsKey(slang)) return false;
+        removeFromDefList(slang, map.get(slang));
+        keys.remove(slang);
+        map.remove(slang);
+        return fileWriteHelper('\n' + slang + "`~");
+    }
 }
