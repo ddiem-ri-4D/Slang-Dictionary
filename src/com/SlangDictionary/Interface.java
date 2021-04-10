@@ -48,11 +48,10 @@ public class Interface {
             newBtn.setMaximumSize(new Dimension(100, 50));
             if (buttonLabel.equals(buttonLabels[selected])) {
                 newBtn.setBackground(secondaryColor);
-                newBtn.setForeground(Color.white);
             } else {
                 newBtn.setBackground(primaryColor);
-                newBtn.setForeground(Color.white);
             }
+            newBtn.setForeground(Color.white);
 
             newBtn.addActionListener(event -> {
                 sidebar.getComponent(selected).setBackground(primaryColor);
@@ -102,7 +101,9 @@ public class Interface {
         pane.add(word, buttonLabels[3]);
     }
 
-    private static void addHistoryWord(JPanel mainPanel) {
+    private static void addHistoryWord(Container panel) {
+        HistoryWord word = new HistoryWord(() -> map.getHistory());
+        panel.add(word, buttonLabels[2]);
     }
 
     private static void addSearchByDefWord(Container pane) {
@@ -152,14 +153,12 @@ public class Interface {
 
         addComponentsToPane(frame.getContentPane());
 
-        frame.setBackground(Color.BLACK);
-
+        //frame.setBackground(Color.BLACK);
         frame.setPreferredSize(new Dimension(900, 400));
         frame.setResizable(false);
-        //frame.getContentPane().setBackground(Color.BLUE);
         frame.pack();
         frame.setVisible(true);
-        frame.getContentPane().setBackground(Color.BLACK);
+        //frame.getContentPane().setBackground(Color.BLACK);
     }
 
     public static void main(String[] args) {

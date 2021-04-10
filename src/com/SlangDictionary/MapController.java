@@ -107,7 +107,21 @@ public class MapController {
     private void removeFromDefList(String key, String s) {
     }
 
-    private void addToDefList(String key, String value) {
+    private void addToDefList(String slang, String def) {
+        def = def.toLowerCase();
+        slang = slang.toLowerCase();
+        String[] words = def.split(" ");
+
+        for (String word : words) {
+            if (defList.containsKey(word)) {
+                if (!defList.get(word).contains(slang))
+                    defList.get(word).add(slang);
+            } else {
+                ArrayList<String> newList = new ArrayList<>();
+                newList.add(slang);
+                defList.put(word, newList);
+            }
+        }
     }
 
     private void createExFile() throws IOException {
@@ -181,8 +195,8 @@ public class MapController {
     public String[] getSlangWordsByDef(String keyword) {
         String[] keys = keyword.toLowerCase().split("");
         Set<String> retainSet = null;
-        for (String key : keys){
-            if(!defList.containsKey(key)){
+        for (String key : keys) {
+            if (!defList.containsKey(key)) {
                 history.add(keyword + " - Not Found!");
                 return null;
             }
@@ -197,5 +211,10 @@ public class MapController {
         retainSet.toArray(res);
         history.add(keyword + " - " + String.join(", ", res));
         return res;
+    }
+
+    public String[] getHistory() {
+        String[] arr = new String[history.size()];
+        return history.toArray(arr);
     }
 }
