@@ -92,7 +92,10 @@ public class Interface {
     private static void addSlangQuizWord(JPanel mainPanel) {
     }
 
-    private static void addEditNewSlangWord(JPanel mainPanel) {
+    private static void addEditNewSlangWord(Container pane) {
+        ModifySlangWord word = new ModifySlangWord();
+        word.addActionEvent(map);
+        pane.add(word, buttonLabels[4]);
     }
 
     private static void addAddingNewSlangWord(Container pane) {

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b6a1a7-df5c-446b-bb28-142acc1af2ca" name="Default Changelist" comment="Initial interface">
+      <change afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/ModifySlangWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ex.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/HistoryWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/HistoryWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/MapController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +142,7 @@
       <workItem from="1617861969279" duration="8046000" />
       <workItem from="1617892235888" duration="6247000" />
       <workItem from="1617943696924" duration="10507000" />
-      <workItem from="1618046679562" duration="5137000" />
+      <workItem from="1618046679562" duration="5445000" />
     </task>
     <servers />
   </component>
