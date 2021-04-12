@@ -108,7 +108,7 @@ public class SlangQuizWord extends JPanel {
                 if (data[finalI + 1].equals(answer)) {
                     popup("Amazing! You get it right!\n");
                     rightAnsCount++;
-                } else popup("Wrong answer!\nThe answer is " + answer);
+                } else popup("Wrong answer!\nThe answer is " + answer +"!");
                 changQuiz();
             });
         }

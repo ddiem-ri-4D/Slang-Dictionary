@@ -1,0 +1,20 @@
+Họ và tên: Phamk Nguyễn Mỹ Diễm
+MSSV: 20424013
+Lớp: 20HC1
+
+Video Youtube:
+Github:
+
+Tự đánh giá:
+Chức năng 1. Tìm kiếm theo slang word - 10đ
+Chức năng 2. Tìm kiếm theo definition - 10đ
+Chức năng 3. Chức năng hiển thị history - 10đ
+Chức năng 4. Add 1 slang words mới - 10đ
+Chức năng 5. Edit 1 slang word - 10đ
+Chức năng 6. Delete 1 slang word - 10đ
+Chức năng 7. Reset danh sách slang words gốc - 10đ
+Chức năng 8. Random 1 slang word - 10đ
+Chức năng 9. Đố vui #1 - 10đ
+Chức năng 10. Đố vui #2 - 10đ
+
+=> 100đ
