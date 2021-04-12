@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b6a1a7-df5c-446b-bb28-142acc1af2ca" name="Default Changelist" comment="Initial interface">
-      <change afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/SlangQuizWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/AddSlangWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/AddSlangWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/SlangQuizWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/SlangQuizWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +142,7 @@
       <workItem from="1617892235888" duration="6247000" />
       <workItem from="1617943696924" duration="10507000" />
       <workItem from="1618046679562" duration="9627000" />
-      <workItem from="1618196922372" duration="2011000" />
+      <workItem from="1618196922372" duration="6495000" />
     </task>
     <servers />
   </component>

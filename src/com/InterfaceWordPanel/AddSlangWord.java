@@ -24,7 +24,7 @@ public class AddSlangWord extends JPanel {
         newSlangInput = new JTextField(16);
         newSlangInput.setFont(new Font("Arial", Font.BOLD, 16));
         newSlangInput.setForeground(Color.decode("#192a56"));
-        newSlangInput.setFont(new Font("SF Mono", Font.PLAIN, 16));
+        newSlangInput.setFont(new Font("Arial", Font.PLAIN, 16));
         JLabel inputLabel = new JLabel("Slang word ");
         inputLabel.setFont(new Font("Arial", Font.BOLD, 16));
         inputLabel.setForeground(Color.decode("#192a56"));
