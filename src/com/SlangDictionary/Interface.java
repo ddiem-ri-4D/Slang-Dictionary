@@ -86,7 +86,18 @@ public class Interface {
         pane.add(mainPanel, BorderLayout.CENTER);
     }
 
-    private static void addSlangQuiz2Word(JPanel mainPanel) {
+    private static void addSlangQuiz2Word(Container pane) {
+        SlangQuizWord word = new SlangQuizWord("slang word", () -> {
+            String[] data = new String[5];
+            String[] keys = map.getRandomKeys(4);
+            int randomIdx = new Random().nextInt(4);
+
+            data[0] = keys[randomIdx] + "," + map.getDefinition(keys[randomIdx]);
+            System.arraycopy(keys, 0, data, 1, 4);
+            return data;
+        });
+
+        pane.add(word, buttonLabels[6]);
     }
 
     private static void addSlangQuizWord(Container pane) {
