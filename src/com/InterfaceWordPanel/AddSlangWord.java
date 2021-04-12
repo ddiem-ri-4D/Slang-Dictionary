@@ -90,6 +90,7 @@ public class AddSlangWord extends JPanel {
                         succeed = map.addSlang(slang, mean);
                     } else if (c == 1) {
                         mean = map.getDefinition(slang) + "| " + mean;
+                        succeed = map.addSlang(slang, mean);
                     }
                 } else {
                     succeed = map.addSlang(slang, mean);

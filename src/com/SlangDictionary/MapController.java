@@ -226,4 +226,15 @@ public class MapController {
         map.remove(slang);
         return fileWriteHelper('\n' + slang + "`~");
     }
+
+    public boolean resetExFile() {
+        try {
+            createExFile();
+            readDictionary();
+        }catch (IOException e){
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
 }

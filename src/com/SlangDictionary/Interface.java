@@ -148,6 +148,26 @@ public class Interface {
     }
 
     private static void addResetFunction(JFrame frame) {
+        int res = JOptionPane.showConfirmDialog(frame,
+                "By clicking OK all of your additional data will be deleted!\nAre you sure about that?",
+                "Confirmation",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.WARNING_MESSAGE);
+
+        if(res == JOptionPane.YES_OPTION){
+            boolean succeed = map.resetExFile();
+            if(succeed){
+                JOptionPane.showMessageDialog(frame,
+                        "Successfully reset Slang Dictionary!",
+                        "Status",
+                        JOptionPane.INFORMATION_MESSAGE);
+            }else{
+                JOptionPane.showMessageDialog(frame,
+                        "Failed to reset Slang Dictionary! Please try again!",
+                        "Status",
+                        JOptionPane.ERROR_MESSAGE);
+            }
+        }
     }
 
     private static void createAndShowGUI() {
