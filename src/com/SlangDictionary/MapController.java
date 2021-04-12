@@ -193,24 +193,23 @@ public class MapController {
     }
 
     public String[] getSlangWordsByDef(String keyword) {
-        String[] keys = keyword.toLowerCase().split("");
+        String[] keys = keyword.toLowerCase().split(" ");
         Set<String> retainSet = null;
         for (String key : keys) {
-            if (!defList.containsKey(key)) {
-                history.add(keyword + " - Not Found!");
+            if (!defList.containsKey(key)){
+                history.add(keyword + " - Not found!");
                 return null;
             }
-
             Set<String> slang = new HashSet<>((defList.get(key)));
-            if (retainSet != null)
-                retainSet.retainAll(slang);
+
+            if (retainSet != null) retainSet.retainAll(slang);
             else retainSet = slang;
         }
 
-        String[] res = new String[retainSet.size()];
-        retainSet.toArray(res);
-        history.add(keyword + " - " + String.join(", ", res));
-        return res;
+        String[] result = new String[retainSet.size()];
+        retainSet.toArray(result);
+        history.add(keyword + " - " + String.join(", ", result));
+        return result;
     }
 
     public String[] getHistory() {

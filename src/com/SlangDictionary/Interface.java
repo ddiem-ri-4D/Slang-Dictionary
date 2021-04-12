@@ -144,8 +144,8 @@ public class Interface {
             }
             return "<html>" + result + "</html>";
         };
-
         word.setMapController(getDefFn, null);
+
         pane.add(word, buttonLabels[1]);
     }
 
