@@ -90,6 +90,7 @@ public class Interface {
     }
 
     private static void addSlangQuizWord(JPanel mainPanel) {
+
     }
 
     private static void addEditNewSlangWord(Container pane) {
