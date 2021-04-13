@@ -1,9 +1,9 @@
 Họ và tên: Phamk Nguyễn Mỹ Diễm
 MSSV: 20424013
-Lớp: 20HC1
+Lớp: 20HCB1
 
-Video Youtube:
-Github:
+Video Youtube: ...
+Github: https://github.com/mydiemri-4D/SlangDictionary
 
 Tự đánh giá:
 Chức năng 1. Tìm kiếm theo slang word - 10đ

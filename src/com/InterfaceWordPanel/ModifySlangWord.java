@@ -26,7 +26,7 @@ public class ModifySlangWord extends JPanel {
         slangInput = new JTextField(20);
         slangInput.setFont(new Font("Arial", Font.BOLD, 16));
         slangInput.setForeground(Color.decode("#192a56"));
-        slangInput.setFont(new Font("Arial", Font.PLAIN, 16));
+        //slangInput.setFont(new Font("Arial", Font.PLAIN, 16));
         JLabel inputLabel = new JLabel("Slang word ");
         inputLabel.setFont(new Font("Arial", Font.BOLD, 16));
         inputLabel.setForeground(Color.decode("#192a56"));
@@ -46,7 +46,7 @@ public class ModifySlangWord extends JPanel {
         descInput.setForeground(Color.decode("#192a56"));
         descInput.setLineWrap(true);
         descInput.setWrapStyleWord(true);
-        descInput.setFont(new Font("Arial", Font.PLAIN, 18));
+        descInput.setFont(new Font("Arial", Font.BOLD, 16));
         JLabel descLabel = new JLabel("Meaning ");
         descLabel.setFont(new Font("Arial", Font.BOLD, 16));
         descLabel.setForeground(Color.decode("#192a56"));
