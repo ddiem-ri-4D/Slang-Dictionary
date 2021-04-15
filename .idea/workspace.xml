@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b6a1a7-df5c-446b-bb28-142acc1af2ca" name="Default Changelist" comment="Initial interface">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Evaluate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Evaluate.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/AddSlangWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/AddSlangWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/ModifySlangWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/ModifySlangWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminar1-Generics-Collections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar1-Generics-Collections.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SlangDictionary_jar/SlangDictionary.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SlangDictionary_jar/SlangDictionary.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/files/slang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/files/slang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +61,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -132,7 +135,11 @@
       <workItem from="1617943696924" duration="10507000" />
       <workItem from="1618046679562" duration="9627000" />
       <workItem from="1618196922372" duration="9217000" />
-      <workItem from="1618324925951" duration="911000" />
+      <workItem from="1618324925951" duration="1513000" />
+      <workItem from="1618462522954" duration="114000" />
+      <workItem from="1618500668418" duration="868000" />
+      <workItem from="1618502668797" duration="821000" />
+      <workItem from="1618504190416" duration="2220000" />
     </task>
     <servers />
   </component>
