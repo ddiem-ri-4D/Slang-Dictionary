@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b6a1a7-df5c-446b-bb28-142acc1af2ca" name="Default Changelist" comment="Initial interface">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Seminar1-Generics-Collections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar1-Generics-Collections.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SlangDictionary_jar/SlangDictionary.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SlangDictionary_jar/SlangDictionary.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/files/slang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/files/slang.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +58,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
@@ -93,7 +90,7 @@
     </configuration>
     <configuration name="Interface" type="Java Scratch">
       <option name="MAIN_CLASS_NAME" value="Interface" />
-      <module name="SlangDictionary-master" />
+      <module name="Seminar1-Generics-Collections" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,6 +137,13 @@
       <workItem from="1618500668418" duration="868000" />
       <workItem from="1618502668797" duration="821000" />
       <workItem from="1618504190416" duration="2220000" />
+      <workItem from="1618547997069" duration="1389000" />
+      <workItem from="1618558729432" duration="2422000" />
+      <workItem from="1618562309273" duration="452000" />
+      <workItem from="1618562832631" duration="438000" />
+      <workItem from="1618594228659" duration="1391000" />
+      <workItem from="1618595693327" duration="437000" />
+      <workItem from="1618596264076" duration="153000" />
     </task>
     <servers />
   </component>
