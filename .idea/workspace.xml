@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45b6a1a7-df5c-446b-bb28-142acc1af2ca" name="Default Changelist" comment="Initial interface">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAMH#1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SlangDictionary.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TuDanhGia.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seminar1-Generics-Collections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seminar1-Generics-Collections.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SlangDictionary_jar/SlangDictionary.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SlangDictionary_jar/SlangDictionary.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evaluate.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ex.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/files/slang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/files/slang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +88,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SlangDictionary.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/SlangDictionary_jar/SlangDictionary.jar" />
       <method v="2" />
@@ -144,6 +159,10 @@
       <workItem from="1618594228659" duration="1391000" />
       <workItem from="1618595693327" duration="437000" />
       <workItem from="1618596264076" duration="153000" />
+      <workItem from="1618672052260" duration="727000" />
+      <workItem from="1618675330204" duration="95000" />
+      <workItem from="1618736696730" duration="4853000" />
+      <workItem from="1618853242861" duration="3274000" />
     </task>
     <servers />
   </component>

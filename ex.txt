@@ -1,1 +1,6 @@
 Slang`Meaning
+demo`demo is demo, demo
+demo`~
+demo`demo is demo
+demo`demo is demo
+demo`demo is demo| demo is demo

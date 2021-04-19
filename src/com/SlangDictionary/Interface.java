@@ -155,8 +155,8 @@ public class Interface {
             String def = map.getDefinitionWithRecord(s);
             if (def.equals(""))
                 return "";
-            String res = String.join("<br/>+", def.split("\\|"));
-            return "<html>+" + res + "</html>";
+            String res = String.join("<br/>+ ", def.split("\\|"));
+            return "<html>+ " + res + "</html>";
         };
         Callable<String[]> getRandomValuesFn = () -> {
             String[] res = new String[2];
