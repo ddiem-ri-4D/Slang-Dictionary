@@ -66,7 +66,7 @@ public class ModifySlangWord extends JPanel {
         submitBtn.setOpaque(true);
         submitBtn.setVisible(false);
 
-        deleteBtn = new JButton("Discard this word");
+        deleteBtn = new JButton("Delete");
         deleteBtn.setFont(new Font("Arial", Font.BOLD, 16));
         deleteBtn.setForeground(Color.decode("#192a56"));
         deleteBtn.setPreferredSize(new Dimension(220, 40));

@@ -172,7 +172,7 @@ public class Interface {
 
     private static void addResetFunction(JFrame frame) {
         int res = JOptionPane.showConfirmDialog(frame,
-                "By clicking OK all of your additional data will be deleted!\nAre you sure about that?",
+                "Are you sure about that?",
                 "Confirmation",
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.WARNING_MESSAGE);
