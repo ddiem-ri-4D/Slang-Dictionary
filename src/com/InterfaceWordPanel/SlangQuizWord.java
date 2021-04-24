@@ -56,7 +56,7 @@ public class SlangQuizWord extends JPanel {
         if (data == null) add(new JLabel("ERROR"));
         setLayout(new BorderLayout());
 
-        quizLabel = new JLabel("Quiz#1", SwingConstants.CENTER);
+        quizLabel = new JLabel("Quiz 1", SwingConstants.CENTER);
         quizLabel.setFont(new Font("Arial", Font.BOLD, 16));
         quizLabel.setForeground(Color.decode("#192a56"));
         countLabel = new JLabel("Answer: 0/1", SwingConstants.CENTER);
@@ -116,7 +116,7 @@ public class SlangQuizWord extends JPanel {
 
     private void changQuiz() {
         answerCount++;
-        quizLabel.setText(("Quiz#" + answerCount));
+        quizLabel.setText(("Quiz " + answerCount));
         quizLabel.setFont(new Font("Arial", Font.BOLD, 16));
         quizLabel.setForeground(Color.decode("#192a56"));
         data = getKeysAndAnswer();

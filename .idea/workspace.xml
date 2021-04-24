@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="45b6a1a7-df5c-446b-bb28-142acc1af2ca" name="Default Changelist" comment="Initial interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ex.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/InterfaceWordPanel/ModifySlangWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/InterfaceWordPanel/ModifySlangWord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/InterfaceWordPanel/SlangQuizWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/InterfaceWordPanel/SlangQuizWord.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/SlangDictionary/MapController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Seminar1-Generics-Collections/com/SlangDictionary/MapController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/ModifySlangWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/ModifySlangWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/Interface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/InterfaceWordPanel/SlangQuizWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/InterfaceWordPanel/SlangQuizWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SlangDictionary/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SlangDictionary/MapController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,6 +150,9 @@
       <workItem from="1618736696730" duration="4853000" />
       <workItem from="1618853242861" duration="3274000" />
       <workItem from="1618890535806" duration="6423000" />
+      <workItem from="1619078074424" duration="227000" />
+      <workItem from="1619234991759" duration="4148000" />
+      <workItem from="1619247501389" duration="3022000" />
     </task>
     <servers />
   </component>

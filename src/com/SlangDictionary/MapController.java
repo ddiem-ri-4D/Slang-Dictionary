@@ -220,7 +220,7 @@ public class MapController {
         removeFromDefList(slang, map.get(slang));
         keys.remove(slang);
         map.remove(slang);
-        return fileWriteHelper('\n' + slang + "`~");
+        return fileWriteHelper('\n' + slang + "`?");
     }
 
     public boolean resetExFile() {
